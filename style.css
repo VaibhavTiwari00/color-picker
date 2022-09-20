@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #41436a;
+}
+
+h1 {
+  font-size: 74px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.parent {
+  width: 100%;
+  padding: 3% 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.child {
+  width: 70%;
+  display: grid;
+  margin: 20px auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5%;
+}
+
+.small-box {
+  width: 100%;
+  height: 60px !important;
+  background-color: #fff;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  font-size: 50px;
+  font-weight: 900;
+  color: red;
+  cursor: pointer;
+  border: none;
+}
+
+.main-box {
+  width: 50%;
+  height: 275px;
+  background-color: #974063;
+  border-radius: 5px;
+  margin: 3% auto;
+}
+
+#col-1 {
+  background-color: #974063;
+}
+
+#col-2 {
+  background-color: #f54768;
+}
+
+#col-3 {
+  background-color: #ff9677;
+}
+
+#col-5 {
+  background-color: #4b4f9a;
+}
+
+#col-4 {
+  background-color: #fff;
+}
+.container-color {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin: 10px auto;
+}
+.color-name {
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 30%;
+  padding: 7px 12px;
+  border-radius: 20px;
+}
+.color-name > input {
+  outline: none;
+  border: none;
+  padding: 7px 12px;
+  font-size: 16px;
+  width: 70%;
+  color: #000;
+}
+.color-name > button {
+  outline: none;
+  border: none;
+  padding: 7px;
+  width: 25%;
+  background-color: #4b4f9a;
+  border-radius: 20px;
+  font-weight: 500;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .parent {
+    padding: 3%;
+  }
+  h1 {
+    font-size: 44px;
+  }
+  .child {
+    width: 95%;
+    margin: 20px auto;
+    grid-gap: 4%;
+  }
+  .main-box {
+    width: 80%;
+  }
+  .color-name {
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 70%;
+    padding: 7px 12px;
+    border-radius: 20px;
+  }
+  .color-name > button {
+    width: 40%;
+  }
+}
